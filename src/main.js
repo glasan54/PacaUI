@@ -1,15 +1,14 @@
-import '@babel/polyfill' // <- babel Polyfills
-import 'whatwg-fetch' // <- Fetch API Polyfill
+import '@babel/polyfill' 
+import 'whatwg-fetch' 
 
 import Vue from 'vue'
 import App from './Components/App/App.vue'
 
 import config from './../config'
-import worker from './registerServiceWorker' // <- register service worker, disable it, when running in development mode
+import worker from './registerServiceWorker'
 
 Vue.prototype.config = config // <- set config to global scope
 
-/* (global) This code is going to tell us, if history mode can be activated on the client, so the application can be consumed without localstorage */
 Vue.prototype.history = () => {
     try {
         localStorage.getItem('check')
