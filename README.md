@@ -1,36 +1,5 @@
 ![](https://i.imgur.com/J8aTIwt.png)
 
-# Dialogflow for Web *v2*
-
-What is [Dialogflow](https://dialogflow.com), by the way?
-
-> Dialogflow lets you build conversational interfaces on top of your products and services by providing a powerful natural language understanding (NLU) engine to process and understand natural language input
-
-This is a unofficial Web Integration for Dialogflow V2, built to support rich responses and make the most out of the Platform available to the Web
-
-The development of this project is done by @mishushakov.
-
-If you have any questions, feel free to [contact](https://i.ushakov.co)
-
-## Features
-
-- Progressive Web App (100/100 Lighthouse score)
-- Accessibility Features
-- Wide Browser Support (IE8+), offline capabilities (history) and great SEO
-- Familiar UI & UX, based on the official Google Assistant Design Specifications
-- Hands-free interaction with Voice Input and Speech Feedback
-- Language Independency
-- Docker and Kubernetes support
-- Rich-component, Webhook and Actions on Google Support ([demo](https://codepen.io/mishushakov/pen/YMwoEK))
-- Iframe Support ([demo](https://codepen.io/mishushakov/pen/ywWaRW))
-- Based on Vue, Webpack 4, Babel 7
-- Lightweight (build is <100KB)
-- Free and Documented
-- Free hosted version on [Dialogflow Gateway](https://dialogflow.cloud.ushakov.co)
-- Made in Germany
-
-![](https://i.imgur.com/0vYBGTq.png)
-
 # Installation
 
 ## Requirements
@@ -60,30 +29,6 @@ Example using npm
 
 `npm install`
 
-Example using yarn
-
-`yarn`
-
-## Customizing App & Connecting your Agent
-
-Open `config.js` and change the `gateway` variable to your Dialogflow Gateway URL. If you don't know, what Dialogflow Gateway is, please read the docs one more time, because you have missed something out.
-
-Hint: the Dialogflow Gateway URL is always your google cloud project id + `.gateway.dialogflow.cloud.ushakov.co`. If you have troubles finding it, make sure you connected your Agent to the Gateway, then visit the [console](https://dialogflow.cloud.ushakov.co/console/), click on "Manage" and copy the Gateway URL
-
-Example
-
-```js
-export default {
-    app: {
-        gateway: "https://dialogflow-web-v2.gateway.dialogflow.cloud.ushakov.co"
-        [...]
-    }
-}
-
-[...]
-```
-
-The logo, agent name, description and the available languages are fetched from Dialogflow directly. Change them in Dialogflow and it will be synced to the UI. Please note, when adding new languages, you may have to translate some of the UI as well (`i18n` field in `config.js`). Also don't forget to clean your cache, if you make changes to the Agent
 
 ## Start development server & Build
 
@@ -118,12 +63,3 @@ To build it you can use npm or yarn
 Example using npm
 
 `npm run build`
-
-Example using yarn
-
-`yarn build`
-
-## Frequently Asked Questions
-
-- Q: I changed the gateway url, but the responses are the same as with the previous one
-- A: Make sure you have **cleaned your cache** and **rebuilt your app**. In Safari go to "Develop" > "Empty Caches". In Chrome: "Developer Tools" > "Application" > "Clear storage" > "Clear site data"
