@@ -3,7 +3,7 @@
 ## Requirements
 
 - NodeJS
-- NPM or Yarn
+- NPM
 - Basic knowledge in ES6 (JavaScript)
 - Google Account and Dialogflow V2 Agent (if you look for V1, please use my [old repo](https://github.com/mishushakov/dialogflow-web) and the [instructions](https://github.com/mishushakov/dialogflow-web/blob/21ffc7017f1a4d51eabb1122c5aae119a7d73587/README.md))
 
